@@ -1,0 +1,96 @@
+export const SLIDE_WIDTH = 10;
+export const SLIDE_HEIGHT = 7.5;
+
+export const INFLUENCER_CARD_TEMPLATE = {
+    id: 'influencer-card',
+    name: 'Influencer Profile Card',
+    elements: [
+        {
+            type: 'image',
+            source: 'profileImageField',
+            x: 0.5,
+            y: 0.5,
+            w: 2.5,
+            h: 2.5,
+        },
+        {
+            type: 'text',
+            source: 'nameField',
+            x: 3.5,
+            y: 0.5,
+            w: 6.0,
+            h: 0.8,
+            fontSize: 28,
+            bold: true,
+        },
+        {
+            type: 'text',
+            source: 'followersField',
+            x: 3.5,
+            y: 1.4,
+            w: 6.0,
+            h: 0.5,
+            fontSize: 16,
+            format: 'followers',
+            color: '666666',
+        },
+        {
+            type: 'text',
+            source: 'bioField',
+            x: 3.5,
+            y: 2.2,
+            w: 6.0,
+            h: 2.0,
+            fontSize: 14,
+        },
+        {
+            type: 'metrics',
+            sources: ['engagementRateField', 'avgLikesField', 'avgCommentsField'],
+            labels: ['Eng. Rate', 'Avg Likes', 'Avg Comments'],
+            x: 0.5,
+            y: 4.5,
+            w: 9.0,
+            h: 0.6,
+            fontSize: 12,
+            color: '444444',
+        },
+        {
+            type: 'image',
+            source: 'statsImageField',
+            x: 0.5,
+            y: 5.3,
+            w: 9.0,
+            h: 2.0,
+            optional: true,
+        },
+    ],
+};
+
+export const COVER_SLIDE_TEMPLATE = {
+    id: 'cover',
+    name: 'Cover Slide',
+    elements: [
+        {
+            type: 'text',
+            source: 'coverTitle',
+            x: 1.0,
+            y: 2.5,
+            w: 8.0,
+            h: 1.2,
+            fontSize: 36,
+            bold: true,
+            align: 'center',
+        },
+        {
+            type: 'text',
+            source: 'coverSubtitle',
+            x: 1.5,
+            y: 3.8,
+            w: 7.0,
+            h: 0.8,
+            fontSize: 20,
+            color: '666666',
+            align: 'center',
+        },
+    ],
+};

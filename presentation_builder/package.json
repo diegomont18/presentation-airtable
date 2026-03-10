@@ -4,6 +4,7 @@
     },
     "dependencies": {
         "@airtable/blocks": "1.18.2",
+        "pptxgenjs": "^4.0.1",
         "react": "^16.14.0",
         "react-dom": "^16.14.0"
     },
